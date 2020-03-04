@@ -1,0 +1,326 @@
+/* this is the main div  */
+main{
+    top: 5%;
+     border: 1px  solid gray;
+    position: relative;
+
+}
+
+
+ /* Its the media query for mobile resposiveness */
+ @media only screen and (max-width: 700px) {
+    .InputContainer{
+     
+      margin-left: 1px;
+      width: 100%;
+
+  } 
+/* end */
+
+
+/* maincontainer contain all the other div inside html */
+.mainContainer{
+    margin-left: 1px !important;
+    width: 100% !important;
+
+  }
+
+}
+
+
+/* this div contain descritpion , category and two button(add task, delete task) including data slection    */
+/* SUBDIVE OF maincontainer */
+.InputContainer{
+    border: 2px solid grey;
+    display: block;
+     border-radius: 10px;
+    background-color:whitesmoke;
+}
+/* end */
+.SubContainerOne{
+
+    border: 1px solid green;
+    display: flex;
+    width: 96%;
+    height: 12%;
+    justify-content: space-between;
+    padding: 2%;
+     
+    
+
+
+}
+
+.SubContainerThree{
+
+    border: 1px solid orange;
+    display: flex;
+    height: 12%;
+  
+     padding: 1%;
+   
+ 
+} 
+
+.addbtn{     
+    width: 100%;
+
+}
+
+.addbtn input:hover{
+
+    background-color: tomato;
+    
+}
+
+.addbtn input{
+   
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    font-weight: bold;
+    background-color: thistle;
+    border-radius: 10px;
+    outline: none;
+   
+
+}
+.addbtn .button{
+     
+    width: 100%;
+    height: 80%;
+    font-size: large;
+    font-weight: bold;
+    background-color: thistle;
+    border-radius: 10px;
+    outline: none;
+ 
+}
+.delbtn{
+    
+    
+    margin-left: 30%;
+    width: 100%;
+ 
+
+}
+.delbtn input:hover{
+ 
+    background-color: rgb(51, 230, 200);
+
+}
+
+
+
+.delbtn input{
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    height: 100%;
+    background-color: red;
+    border-radius: 10px;
+    outline: none;
+ 
+
+}
+
+
+
+
+
+
+
+.descritpion input{
+    width: 100%;
+    border: none;
+     font-size:  large;
+     outline: none;
+    background-color: transparent;
+
+  
+ 
+}
+ 
+
+
+    /* Display container contain the data (des , due date, category) */
+  .display{
+
+    margin-left: 0px !important;
+    width: 100% !important;
+    border: 1px solid red;
+
+    
+  } 
+  /* end */
+
+   
+
+  
+.title{
+    
+    font-size: large!important;
+
+}
+
+
+ 
+.SubContainerTwo{
+
+     
+    display: flex;
+    width: 100%;
+    padding: 1%;
+
+
+ 
+
+}
+
+.Date{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 2%;
+}
+
+.Date input[type="date"]{
+ 
+   font-size: large;
+  
+}
+ 
+.title {
+ 
+
+     font-size: xx-large;
+      font-weight: bolder;
+
+}
+
+select{
+
+    border: none;
+    outline: none;
+    width: 80%;
+
+}
+
+.Category{
+ 
+    width: 70%;
+    
+
+}
+
+.Category select{
+    font-size: large;
+}
+
+
+
+
+
+
+
+.display{
+    
+
+     
+    
+    
+    /* width: 50%;
+    margin-top: 0px;
+ 
+    margin-left: auto;
+    margin-right: auto; */
+     border-radius: 10px;
+    background-color:whitesmoke;
+    
+
+
+
+}
+
+li{
+
+    
+    width: 100%;
+    font-size: x-large;
+    border:1px solid rgb(228, 216, 216);
+    margin-top:30px !important;
+    position: relative;
+
+    
+
+ }
+
+ ul{
+     padding : 3px !important;
+    
+ }
+
+ li{
+     padding: 0px;
+     margin-bottom: 3%;
+     height: 10%;
+   
+ }
+ .liclass{
+
+    display:flex;
+    margin-top: 2%;
+
+
+
+
+ }
+
+ .liclass input{
+     display: block !important;
+     margin-top: 10px;
+     margin-left: 10px;
+ }
+ .liclass .title{
+     margin-left: 3%;
+ }
+
+ 
+ .cat{
+
+     margin-left: auto;
+     margin-right: 1%;
+     border: 2px solid cornsilk;
+      
+     padding: 1px;
+     background-color: rgb(51, 230, 200);
+  
+
+
+ }
+
+ .mainContainer{
+ 
+
+    width: 50%;
+ 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgb(136, 136, 136) -1px -1px 6px 8px;
+    
+       
+
+ }
+
+ .d1{
+
+    display: flex;
+    flex-direction: column;
+
+
+ }
+
+ .h1{
+     font-size: x-large;
+     font-weight: bold;
+ }

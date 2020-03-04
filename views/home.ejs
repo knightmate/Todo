@@ -1,0 +1,142 @@
+<html>
+    
+   <header>
+       <link rel="stylesheet" href="./css/home.css"> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>
+           Todo App
+       </title>
+   </header>
+
+<body>
+  
+ <main>
+
+    <div class="maincontainer">
+
+
+    <div class="InputContainer">
+       <h1 style="text-align: center;">  TODO APP </h1>
+          
+        <div class="SubContainerOne"> 
+     
+            <form method="POST" action="/"> 
+
+        <div class="descritpion"> 
+           <div class="title" >Description</div> 
+            <input type="text" placeholder="What You Need To Do?" name="des" required>
+
+ 
+        </div>
+   
+  
+
+        </div>
+
+    <div class="SubContainerTwo"> 
+
+        <div class="Category">
+            
+             <div class="title">Category</div>
+            
+             <select name="selectitem" required>  
+            <option value="Personal">Personal</option>
+            <option value="Business">Business</option>
+            <option value="Work">Work</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Food">Food</option>
+             </select>
+
+        </div>    
+       
+        <div class="Date">
+            <div class="title">Due Date</div>
+           
+            <input type="date" name="date" required> 
+              
+        </div> 
+  
+
+    </div>
+
+    <div class="SubContainerThree"> 
+ 
+   
+        <div class="addbtn">
+
+            <input type="submit" value="ADD TASK" > 
+             
+
+
+
+
+             </div>
+ 
+             <div class="delbtn">
+                 
+                <input type="submit" value="DELETE TASK"   name="del"> 
+                 </div>
+
+               
+
+    </div>
+
+
+
+    </div>
+
+   
+    <div class="display">
+     
+        <ul>
+            <form>
+           <% for(let i of task){  %>
+           
+          <li style="list-style: none;">
+           
+             <div class="liclass">
+                <input type="checkbox"    name="SelectedValues" type="hidden"     value=<%=i.id %> > 
+             
+                <div class="d1">
+                
+                    <div class="h1"> <%=i.des%> </div>
+                   
+                    <div class="datedisplay">
+                        <%=i.date%>
+                    </div>
+    
+
+                </div>
+                 
+                <div class="cat">
+                  <%=i.task%>
+                </div> 
+                </div>
+    
+            
+            </li>
+
+           <%}%>
+       
+        </form>
+        </ul>
+        
+            
+            
+              
+    </div>
+
+       
+</div>
+
+
+    
+ </main>
+
+ 
+   
+</body>
+
+
+ 
+</html>

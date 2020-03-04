@@ -1,0 +1,18 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "TodoApp Build Using Express(node.js)",
+  "main": "index.js",
+  "scripts": {
+    "start":"npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MeghrajDeshmukh",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2",
+    "nodemon": "^2.0.2"
+  }
+}
